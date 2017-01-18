@@ -1,0 +1,37 @@
+body {
+    background-image: url(https://dl.dropboxusercontent.com/u/159328383/background.jpg);
+}
+
+#sign_in {
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #23203b;
+    text-align: center;
+    margin-top: 20%;
+}
+
+form {
+    margin: 0 auto;
+    width: 250px;
+}
+
+input {
+    width: 250px;
+}
+
+.btn {
+    width: 250px;
+    margin-top: 10px;
+}
+
+label {
+    color: #ffffff;
+}
+
+li {
+    color: #cc0000;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}

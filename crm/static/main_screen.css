@@ -1,0 +1,50 @@
+body {
+    background-image: url(https://dl.dropboxusercontent.com/u/159328383/background.jpg);
+}
+
+#sign_in {
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #23203b;
+    text-align: center;
+    margin-top: 20%;
+}
+
+#logout_button {
+    float: right;
+    margin-right: 20px;
+    width: 100px;
+}
+
+form {
+    margin: 0 auto;
+    width: 250px;
+}
+
+input {
+    width: 250px;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+#welcome_message{
+    text-align: center;
+    color: #ffffff;
+}
+
+.nav {
+    margin-top: 50px;
+}
+.nav > li > a {
+    padding: 30px;
+}
+
+.nav-pills > .menu > a:hover {
+    background-color: #337AB7;
+}
+
+.nav-pills > .menu > a {
+    color: #ffffff;
+}

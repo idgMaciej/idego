@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    {% block js %}
+    <script src="{%  static 'bootstrap.js' %}"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+{% endblock %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main_screen.css' %}" />
+    <title>Main</title>
+</head>
+<body>
+    <h1>CRM Main screen</h1>
+    <p id="welcome_message">Hello {{ user.username }}</p>
+    <a href="logout?next=/" id=logout_button class="btn btn-default">Logout</a>
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a>Menu</a></li>
+      <li role="presentation" class="menu"><a href="users">Users</a></li>
+      <li role="presentation" class="menu"><a href="companies">Companies</a></li>
+    </ul>
+</body>
+</html>

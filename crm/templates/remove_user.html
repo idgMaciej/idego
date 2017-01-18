@@ -1,0 +1,24 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'remove.css' %}" />
+    <title>Users</title>
+</head>
+<body>
+    <h1>Remove User</h1>
+    <p id="welcome_message">Hello {{ user.username }}</p>
+    <a href="main" id=main_button class="btn btn-default">Menu</a>
+    <br>
+    <br>
+    <a href="logout?next=/" id=logout_button class="btn btn-default">Logout</a>
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form }}
+        <button id="remove_user_btn" type="submit" class="save btn btn-default">Remove</button>
+    </form>
+</body>
+</html>

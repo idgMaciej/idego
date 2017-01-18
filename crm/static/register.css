@@ -1,0 +1,45 @@
+body {
+    background-image: url(https://dl.dropboxusercontent.com/u/159328383/background.jpg);
+}
+
+form {
+    margin: 0 auto;
+    width: 250px;
+}
+
+input {
+    width: 250px;
+}
+
+#welcome_message {
+    text-align: center;
+    color: #ffffff;
+}
+
+#main_button, #logout_button {
+    float: right;
+    margin-right: 20px;
+    width: 100px;
+}
+
+#register_button  {
+    margin-top: 20px;
+    width: 250px;
+}
+
+label {
+    color: #ffffff;
+}
+
+h1, h3, .errorlist {
+    text-align: center;
+    color: #ffffff;
+}
+
+.errorlist {
+    color: #ffffff;
+}
+
+.helptext {
+     visibility: hidden;
+}

@@ -1,0 +1,48 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'companies.css' %}" />
+    <title>Companies</title>
+</head>
+<body>
+<div class="top_bar">
+    <div class="header">
+        <h1>Companies</h1>
+        <p id="welcome_message">Hello {{ user.username }}</p>
+    </div>
+    <div class="buttons">
+        <a href="main" id=main_button class="btn btn-default">Menu</a>
+        <br>
+        <br>
+        <a href="logout?next=/" id=logout_button class="btn btn-default">Logout</a>
+    </div>
+</div>
+    <table id="company_table" class="table table-hover">
+      <thead>
+        <tr>
+            <th>Company Name</th>
+            <th>Date Added</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for company in companies %}
+        <tr>
+            <td>{{ company.name }}</td>
+            <td>{{ company.add_date }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <h3>Add new company:</h3>
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button id="add_company_button" type="submit" class="save btn btn-default">Add</button>
+    </form>
+</body>
+</html>

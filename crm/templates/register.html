@@ -1,0 +1,24 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'register.css' %}" />
+    <title>Register User</title>
+</head>
+<body>
+    <h1>Register User</h1>
+    <p id="welcome_message">Hello {{ user.username }}</p>
+    <a href="/main" id=main_button class="btn btn-default">Menu</a>
+    <br>
+    <br>
+    <a href="/logout?next=/" id=logout_button class="btn btn-default">Logout</a>
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button id="register_button" type="submit" class="save btn btn-default">Add User</button>
+    </form>
+</body>
+</html>

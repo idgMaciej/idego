@@ -1,0 +1,9 @@
+1. Django framework.
+
+Installation: 
+pip install django
+
+2. Bootstrap 3 for Django
+
+Installation:
+pip install django-bootstrap3

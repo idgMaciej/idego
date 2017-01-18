@@ -1,0 +1,76 @@
+body {
+    background-image: url(https://dl.dropboxusercontent.com/u/159328383/background.jpg);
+}
+
+form {
+    margin: 0 auto;
+    width: 250px;
+}
+
+input {
+    width: 250px;
+}
+
+#remove_button, #register_button {
+    float: left;
+    width: 100px;
+    margin-left: 20px;
+}
+
+#main_button, #logout_button {
+    float: right;
+    margin-right: 20px;
+    width: 100px;
+}
+
+.top_bar {
+    position: relative;
+    height: 100px;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    height: 50px;
+}
+
+.buttons {
+    position: relative;
+}
+
+.right_buttons {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+}
+
+.left_buttons {
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+}
+
+label {
+    color: #ffffff;
+}
+
+h1, h3, #welcome_message, .errorlist {
+    text-align: center;
+    color: #ffffff;
+}
+
+td, th {
+    color: #ffffff;
+}
+
+.errorlist {
+    color: #ffffff;
+}
+
+table {
+    margin-top: 50px;
+}
+
+table > tbody :hover {
+    background-color: #337AB7;
+}
